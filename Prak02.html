@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRAKTIKUM 02 FORM HTML dan CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      <div id="header">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Prak02.html">PENDAFTARAN</a></li>
+            <li><a href="selesaii.html">SELESAIS</a></li>
+          </ul>
+        </nav>
+        <center><h1>PT.SUKA BUMI ABADI</h1></center>
+        <center><h1>Form Pendaftaran Pekerjaan</h1></center>
+        
+    
+          <fieldset>
+            <form method="post" action="selesai.html">
+          <legend align="center"><h3> INFORMASI PRIMER </h3></legend>
+          
+          <div class="form-grup">
+            <label>Nama Lengkap :</label>
+            <input type="text" name="nama" placeholder="Isikan nama lengkap Anda" required="required"> 
+            <br><br>
+
+          <div class="form-grup">
+            <label> NIK :</label>
+            <input type="text" name="nik"  placeholder=" masukkan NIK anda" requireds="required" pattern="[0-9]{9}" title="NIK adalah angka yang dikeluarkan olek Disdukcapil">
+            <br><br>
+
+          <div class="form-grup">
+            <label><b>Tanggal lahir :</b></label>
+            <input type="datetime-local" class="dateTime" name="starttime" id="startTime" step="2">
+            <br><br>
+          
+          <div class="form-grup">
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="mis. email@gmail.com" maxlength="20" autocomplete="off">
+            <br><br>
+
+          <div class="form-grup">
+            <label>Password :</label>
+            <input type="password" name="password" placeholder="Password dengan huruf, angka dan symbol">
+            <br><br>
+
+          <div class="form-grup">
+            <label>Asal Provinsi :</label>
+            <select name="Provinsi">
+              <option>--Pilih Provinsi--</option>
+              <option>Aceh</option>
+              <option>Bali</option>
+              <option>Banten</option>
+              <option>Bengkulu</option>
+              <option>Gorontalo</option>
+              <option>Jakarta</option>
+              <option>Jambi</option>
+              <option>Jawa Barat</option>
+              <option>Jawa Tengah</option>
+              <option>Jawa Timur</option>
+              <option>Kalimantan Barat</option>
+              <option>Kalimantan Selatan</option>
+              <option>Kalimantan Tengah</option>
+              <option>Kalimantan Timur</option>
+              <option>Kalimantan Utara</option>
+              <option>Kepulauan Bangka Belitung</option>
+              <option>Kepulauan Riau</option>
+              <option>Lampung</option>
+              <option>Maluku</option>
+              <option>Maluku Utara</option>
+              <option>Nusa Tenggara Barat</option>
+              <option>Nusa Tenggara Timur</option>
+              <option>Papua</option>
+              <option>Papua Barat</option>
+              <option>Riau</option>
+              <option>Sulawesi Barat</option>
+              <option>Sulawesi Selatan</option>
+              <option>Sulawesi Tengah</option>
+              <option>Sulawesi Tenggara</option>
+              <option>Sulawesi Utara</option>
+              <option>Sumatera Barat</option>
+              <option>Sumatera Selatan</option>
+              <option>Sumatera Utara</option>
+              <option>Yogyakarta</option>
+          </select> <br><br>
+          
+          <div class="form-grup">
+            <label>Gender :</label>
+                <input type="radio" name="gender" value="1"> Laki-laki 
+                <input type="radio" name="gender" value="2"> Perempuan
+            <br><br>
+          
+          <div class="form-grup">
+            <div class="label"></div>
+            <label>Agama :</label> 
+            <select name="agama">
+               <option>--Pilih Agama--</option>
+               <option>Islam</option>
+               <option>Kristen Katolik</option>
+               <option>Kristen Protestan</option>
+               <option>Buddha</option>
+               <option>Hindu</option>
+            </select> <br><br>
+
+          <div class="form-grup">
+            <div class="label">
+              <label>Status :</label>
+              <input type="radio" name="status" value="2">Belum kawin
+              <input type="radio" name="status" value="3">Sudah kawin
+              <input type="radio" name="status" value="4">Janda
+              <input type="radio" name="status" value="5">Duda
+              <br><br>
+
+          <div class="form-grup">
+            <div class="label"></div>
+            <label>Golongan Darah :</label>
+            <select name="Golongan Darah">
+              <option>--Goldar--</option>
+              <option>A</option>
+              <option>B</option>
+              <option>AB</option>
+              <option>O</option>
+            </select> <br><br>
+          <tr>
+            <td>Pendidikan Terakhir :</td>
+            <td><input type="text" name="pendidikan terakhir" placeholder="isikan pendidikan terakhir anda">
+          </tr><br><br>
+
+          <label for="NoTelp">
+            No Telp        : <input type="NoTelp" value="">
+          </label><br><br>
+          </form> 
+               
+          </fieldset>
+
+          <fieldset size="25">
+          <legend align="center"><h3> INFORMASI SEKUNDER </h3></legend>
+          <div class="form-grup">
+              <label>Alamat :</label>
+              <textarea name="alamat" placeholder="Isi alamat lengkap Anda"></textarea>
+              <br><br>
+          
+          <div class="form-grup">
+              <div class="label"></div>
+              <label>Kendaraan :</label>
+              <div class="input">
+              <input type="checkbox" name="kendaraan" value="mobil"> Mobil <br>
+              <input type="checkbox" name="kendaraan" value="motor"> Sepeda Motor <br>
+              <input type="checkbox" name="kendaraan" value="sepeda"> Sepeda <br>
+
+          <div class="form-grup">
+              <label>Alamat Website :</label>
+              <input type="url" name="website" placeholder="mis. http://websitesaya.com">
+              <br><br>
+        
+          
+          
+          <div class="form-grup">
+              <label>Jumlah Anak :</label>
+              <input type="number" name="anak" value="0" min="0" max="10" title="isikan jika anda sudah kawin dan sudah punya anak">
+              <br><br>
+          
+          <div class="form-grup">
+              <label>Foto Anda :</label>
+              <div class="input">
+              <label for="file-upload" class="upload-foto">
+                Upload Foto
+              </label>
+              <input id="file-upload" type="file" name="foto">
+            </div>
+          </div>
+          
+        </fieldset size="25" align="center">
+          <div class="form-grup">
+            <button type="submit" value="Submit"> <a href="selesaii.html">Submit</a></button>
+            
+            <button type="reset" value="reset"> <a href="selesaii.html">Batal </a></button>
+          </div>
+          <div class="form-grup">
+          <hr>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </body>
+</html>
