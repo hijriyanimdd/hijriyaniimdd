@@ -1,0 +1,56 @@
+<html><!--PRAKTIKUM HIJRIYANI MARDHOTILLAH -->
+    <head>
+        <title>Praktikum Membuat Form HTML</title> <!--202031254 F-->
+    </head>
+    <h1>Form HTML</h1>
+<body>
+    <form method="POST" action="" target="_blank" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td> Name :</td>
+                <td><input type="text" name="nama_anda" maxlenght="30" size="40"/></td>
+            </tr>
+            <tr>
+                <td> Gender :</td>
+                <td>
+                    <input type="radio" name="gender" value="Man"> Man
+                    <input type="radio" name="gender" value="Woman" checked> Woman
+                </td>
+            </tr>
+            <tr>
+                <td> Address :</td>
+                <td><input type="text" name="alamat" maxlenght="100" size="60"/></td>
+            </tr>
+            <tr>
+                <td> Country :</td>
+                <td>
+                    <select name="Country">
+                        <option value="Indonesia" selected>Indonesia </option> checked
+                        <option value="Malaysia">Malaysia</option> 
+                        <option value="Singapura">Singapura</option> 
+                        <option value="Korea Selatan">Korea Selatan</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Email :</td>
+                <td><input type="text" name="email" maxlenght="100" size="60"/></td>
+            </tr>
+            <tr>
+                <td> Photo :</td>
+                <td>
+                    <input type="file" name="file_photo" />
+                </td>
+            </tr>
+            <tr>
+                <td> Comment :</td>
+                <td>
+                    <textarea name="comment" rows="6" cols="60"></textarea>
+                    <input type="submit" value="submit"/>
+                </td>
+            </tr>
+        </table>
+        <p style="padding-left: 15%;">Form Registrasi</p>
+    </form>
+</body>
+</html>
